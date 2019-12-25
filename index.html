@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Summer Internship</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-overlay"></div>
+    <div class="main">
+      <header>
+        <h1 id="title">Summer Internship Survey</h1>
+        <p id="description">
+          Please fill in this survey to enroll for the summer Internship offered
+          <br />
+          by Alpha-Technologies
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="name">
+          <label id="name-label " for="name"
+            ><strong>Name</strong><sup>*</sup>
+          </label>
+          <br />
+          <input required placeholder="Name" id="name" type="text" />
+        </div>
+
+        <div class="email">
+          <label id="email-label" for="email"
+            ><strong>E-mail</strong><sup>*</sup></label
+          >
+          <br />
+          <input required placeholder="E-mail" id="email" type="email" />
+        </div>
+
+        <div class="gender">
+          <label for="radio-group"><strong>Gender</strong></label> <br />
+          <div id="radio-group">
+            <div id="r" class="int-inp">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+            </div>
+            <div id="r" class="int-inp">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" value="female" id="female" />
+            </div>
+            <div id="r" class="int-inp">
+              <label for="others">Other</label>
+              <input type="radio" name="gender" id="others" value="other" />
+            </div>
+          </div>
+        </div>
+
+        <div class="internship">
+          <label for="checkbox"><strong>Interested Internships</strong></label>
+          <br />
+          <div id="checkbox-group">
+            <div class="int-inp">
+              <label for="web">Web Development</label>
+              <input type="checkbox" name="internship" id="web" value="web" />
+            </div>
+
+            <div class="int-inp">
+              <label for="android">Android Development</label>
+              <input
+                type="checkbox"
+                name="internship"
+                value="android"
+                id="android"
+              />
+            </div>
+
+            <div class="int-inp">
+              <label for="machine">Machine Learning</label>
+              <input
+                type="checkbox"
+                name="internship"
+                id="machine"
+                value="machine"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="education">
+          <div class="branch">
+            <label for="dropdown"
+              ><strong>Branch<sup>*</sup></strong></label
+            ><br />
+            <select name="Branch" id="dropdown">
+              <option value="computer-science">Computer Science</option>
+              <option value="information-technology"
+                >Information Technology</option
+              >
+              <option value="software-engineering">Software Engineering</option>
+              <option value="electrical-electronics"
+                >Electrical & Electronics</option
+              >
+            </select>
+          </div>
+
+          <div class="semester">
+            <label id="number-label" for="semester"
+              ><strong>Semester<sup>*</sup></strong></label
+            ><br />
+            <input
+              required
+              placeholder="0"
+              min="1"
+              max="8"
+              id="semester"
+              type="number"
+            />
+          </div>
+        </div>
+
+        <div class="comment">
+          <label for="comment"><strong>Your Comments</strong></label
+          ><br />
+          <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>

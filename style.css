@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("./img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #4063c1;
+  font-family: "Montserrat", sans-serif;
+}
+strong{
+    font-weight:600;
+}
+sup {
+  color: #de3e31;
+}
+.bg-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(243, 151, 43, 0.7);
+  z-index: -1;
+}
+.main {
+  margin: 20vh auto 20vh auto;
+  border-radius: 2%;
+  width: 50vw;
+  background-color: rgb(256, 256, 256);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250vh;
+  text-align: center;
+}
+form {
+
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header
+{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+header h1
+{
+    margin:10vh 1vh 0 20px;
+
+}
+header p{
+    width: 80%;
+    margin: auto;
+}
+.name,.email,.comment,.gender,.internship {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+.name label,.email label,.comment label,.gender label,.internship label
+{
+    align-self: flex-start;
+}
+.name input,.email input,.comment textarea,.education input,.education select {
+  height: 30px;
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #323552;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.gender,.internship
+{
+    justify-content: space-around;
+    align-items: center;
+}
+#radio-group,#checkbox-group
+{
+    margin:40px auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#radio-group input,.int-inp
+{
+    margin-right:50px;
+}
+
+#comment
+{
+    height: 150px;
+}
+.int-inp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#r
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#submit {
+  color: #fff;
+  border: none;
+  background-color: #de3e31;
+  border-radius: 5%;
+  height: 40px;
+  width: 150px;
+  margin: 10vh auto;
+  font-size: 13px;
+}
+#submit:hover {
+  outline: none;
+}
+.education {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.education input,.education select 
+{
+    margin:40px auto;
+}
+
+@media screen and (max-width:950px)
+{
+    .main
+    {
+        width:70vw;
+    }
+}
+@media screen and (max-width:670px)
+{
+    .main
+    {
+        width:90vw;
+        height:300vh;
+    }
+    #radio-group,#checkbox-group
+    {
+        margin: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+
+    }
+
+    .int-inp
+    {
+
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .education select
+    {
+        width: 45vw;
+    }
+    .education input
+    {
+        width:18vw;
+    }
+
+}
